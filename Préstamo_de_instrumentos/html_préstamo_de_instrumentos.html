@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamo de Instrumentos Musicales</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilo_prestamo_instrumentos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tittle">Préstamo de Instrumentos Musicales</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="instrumento">Tipo de Instrumento</label>
+                <input type="text" class="form-control" id="instrumento">
+            </div>
+            <div class="form-group">
+                <label for="serial">Serial del Instrumento</label>
+                <input type="text" class="form-control" id="serial" placeholder="Ej: 1234567890">
+            </div>
+            <button type="button" class="btn-btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Consultar
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Consulta</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table id="exampleTable" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Observación</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>--/--/----</td>
+                            <td>ej. John Doe</td>
+                            <td>---</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-btn-primary" data-dismiss="modal">Cerrar</button>
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ej: García" id="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="contacto">Contacto</label>
+                <input type="text" class="form-control" id="contacto" placeholder="Ej: 0410-000-00-00" id="contacto" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_prestamo">Fecha de Préstamo</label>
+                <input type="date" class="form-control" id="fecha_prestamo">
+            </div>
+            
+          <button type="submit" class="btn-btn-primary">Realizar Préstamo</button>
+
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+       
+</body>
+
+</html>
